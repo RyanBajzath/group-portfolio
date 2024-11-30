@@ -3,12 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Page</title>
     <meta
       name="description"
-      content="Personal portfolio website for Ryan, Gabriela and Ehsan"
+      content="Personal portfolio website for Ryan, Gabriela, and Ehsan"
     />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="author" content="co-authored by Ryan, Gabriela and Ehsan" />
+    <meta name="author" content="Co-authored by Ryan, Gabriela, and Ehsan" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/style.css" />
   </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="../../images/logo.png"
+            alt="Company logo linking to the homepage"
+          />
+        </a>
+        <ul>
+          <li><a href="../fr/contact.html">FR</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <img
+          src="../../images/banner_desktop.png"
+          class="img-responsive"
+          alt="Desktop banner with a modern and sleek design"
+        />
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contactUsMain">
+      <section>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>LinkedIn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ryan</td>
+              <td>Bajzath</td>
+              <td><a href="r.bajzath@hotmail.com">r.bajzath@hotmail.com</a></td>
+              <td>
+                <a href="https://www.linkedin.com/in/ryan-bajzath-06561b150/"
+                  >Ryan's LinkedIn</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Gabriela</td>
+              <td>Vasquez</td>
+              <td><a href="gavasquez@hotmail.ca">gavasquez@hotmail.ca</a></td>
+              <td>
+                <a href="https://www.linkedin.com/in/gabriela-vasquezdegracia"
+                  >Gabriela's LinkedIn</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Ehsan</td>
+              <td>Mostafavi</td>
+              <td><a href="gavasquez@hotmail.ca">semostafavi@gmail.com</a></td>
+              <td>
+                <a href="https://www.linkedin.com/in/ehsanmostafav"
+                  >Ehsan's LinkedIn</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <form class="contactForm">
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" />
+            <span class="errorMessage" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" />
+            <span class="errorMessage" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea type="text" class="form-control" id="message"></textarea>
+            <span class="errorMessage" id="messageError"></span>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" /> Remember me</label>
+          </div>
+          <fieldset id="submitbutton">
+            <input
+              type="button"
+              value="Submit"
+              onclick="contactFormHandle(event)"
+            />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2024 Ryan, Gabriela, and Ehsan. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Javascript/script.js"></script>
+  </body>
 </html>

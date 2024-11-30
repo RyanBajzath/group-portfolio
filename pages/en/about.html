@@ -3,12 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Team Portfolio</title>
     <meta
       name="description"
-      content="Personal portfolio website for Ryan, Gabriela and Ehsan"
+      content="Personal portfolio website for Ryan, Gabriela, and Ehsan"
     />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="author" content="co-authored by Ryan, Gabriela and Ehsan" />
+    <meta name="author" content="Co-authored by Ryan, Gabriela, and Ehsan" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/style.css" />
   </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="../../images/logo.png"
+            alt="Company logo linking to the homepage"
+          />
+        </a>
+        <ul>
+          <li><a href="../fr/about.html">FR</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <img
+          src="../../images/banner_desktop.png"
+          class="img-responsive"
+          alt="Desktop banner showing a vibrant and modern design"
+        />
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="aboutUsMain">
+      <section class="AboutUs">
+        <section class="aboutUsTileContainer">
+          <section class="aboutUsBio">
+            <h2>Ryan Bajzath</h2>
+            <p>
+              I have a passion for learning, problem-solving, and creation, all
+              of which are integral to the coding process. I thrive both
+              independently and within collaborative environments and possess
+              strong skills in planning, designing, and developing software
+              solutions. Web development will be my home away from home.
+            </p>
+          </section>
+
+          <img
+            class="aboutUsImg"
+            src="../../images/ryanProfilePhoto.jpg"
+            alt="Ryan Bajzath smiling in a professional setting"
+          />
+        </section>
+      </section>
+      <section class="AboutUs">
+        <section class="aboutUsTileContainer">
+          <section class="aboutUsBio">
+            <h2>Ehsan Mostafavi</h2>
+            <p>
+              Although my background is in Petroleum Engineering, I specialize
+              in programming for companies in the oil and gas industry. I
+              develop in-house software solutions to streamline engineering
+              calculations, utilizing tools such as Visual C#, VBA, and Java. I
+              also have experience in web development. In addition, I hold a
+              certificate in Applied Cybersecurity and am currently pursuing a
+              Certificate in Computers and Information Technology at McGill
+              University.
+            </p>
+          </section>
+
+          <img
+            class="aboutUsImg"
+            src="../../images/ehsanProfilePhoto.png"
+            alt="Ehsan Mostafavi in a professional portrait"
+          />
+        </section>
+      </section>
+      <section class="AboutUs">
+        <section class="aboutUsTileContainer">
+          <section class="aboutUsBio">
+            <h2>Gabriela Vasquez</h2>
+            <p>
+              An IT Application Analyst by profession and a part-time student at
+              McGill University, Gabriela is driven by a passion for blending
+              technology and creativity. With a keen eye for detail, she brings
+              brands to life through content creation and brand identity work,
+              helping businesses connect with their audiences in meaningful
+              ways. Her goal is to transition into UI/UX design, crafting
+              intuitive, visually compelling digital experiences that seamlessly
+              combine form and function.
+            </p>
+          </section>
+
+          <img
+            class="aboutUsImg"
+            src="../../images/gabProfilePhoto.jpg"
+            alt="Gabriela Vasquez working in a creative environment"
+          />
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2024 Ryan, Gabriela, and Ehsan. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Javascript/script.js"></script>
+  </body>
 </html>

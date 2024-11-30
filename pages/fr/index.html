@@ -1,14 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio d'Équipe</title>
     <meta
       name="description"
-      content="Personal portfolio website for Ryan, Gabriela and Ehsan"
+      content="Site personnel de portfolio pour Ryan, Gabriela, et Ehsan"
     />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="author" content="co-authored by Ryan, Gabriela and Ehsan" />
+    <meta name="author" content="Co-rédigé par Ryan, Gabriela, et Ehsan" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/style.css" />
   </head>
+
+  <body>
+    <!-- Section d'en-tête -->
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            class="active"
+            class="logo"
+            src="../../images/logo.png"
+            alt="Logo du portfolio de l'équipe renvoyant à la page d'accueil"
+          />
+        </a>
+        <ul class="pageLinks">
+          <li><a href="../en/index.html">EN</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="hobbies.html">Loisirs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">À Propos</a></li>
+        </ul>
+      </nav>
+      <section class="banner">
+        <img
+          src="../../images/banner_desktop.png"
+          class="img-responsive"
+          alt="Une bannière créative pour le portfolio de l'équipe"
+        />
+      </section>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main>
+      <section class="containerhomePage">
+        <section>
+          <img
+            class="animatedImg"
+            src="../../images/iconHome.png"
+            alt="Une icône dynamique représentant le travail d'équipe et la collaboration"
+          />
+        </section>
+        <section class="webSiteBio">
+          <h1 class="greeting">Bienvenue sur notre portfolio</h1>
+          <p>
+            Nous sommes une équipe de développeurs et designers web passionnés,
+            dédiés à la création d'expériences numériques innovantes et
+            percutantes. Explorez notre travail, découvrez nos compétences et
+            voyez comment nous pouvons apporter de la valeur à vos projets.
+          </p>
+        </section>
+        <!-- Formulaire Popup -->
+        <div id="nameModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bienvenue !</h2>
+            <p>Veuillez entrer votre nom :</p>
+            <form id="nameForm">
+              <input
+                type="text"
+                id="userName"
+                placeholder="Votre nom"
+                required
+              />
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section de pied de page -->
+    <footer>
+      <p>© 2024 Ryan, Gabriela, et Ehsan. Tous droits réservés.</p>
+    </footer>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Javascript/script.js"></script>
+  </body>
 </html>

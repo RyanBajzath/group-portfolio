@@ -1,138 +1,301 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+h1 {
+  font-size: 32px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+h2 {
+  font-size: 24px;
+  font-family: "Montserrat", Arial, sans-serif;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+
+h3 {
+  font-size: 20px;
+  font-family: "Montserrat", Arial, sans-serif;
 }
+
 body {
-  line-height: 1;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f8f9fa;
 }
-ol,
+
+ul a {
+  color: #040f16;
+  border: #040f16 solid 1px;
+  padding: 1em;
+  text-decoration: none;
+}
+
 ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  list-style-type: none;
 }
 
-/* Post css reset */
-.nav {
+footer {
+  height: 10vh;
+  background-color: white;
   display: flex;
+  align-items: center;
+  padding-left: 2em;
 }
 
-.nav .links {
+nav {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  border-bottom: #040f16 solid 0.5em;
+  gap: 1em;
 }
+
+nav img {
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  padding: 0px;
+}
+
+nav ul li a:hover {
+  color: #040f16;
+}
+
+/* Media query for mobile screens (up to 1100px wide) */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+    width: 80vw;
+  }
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+  }
+}
+.banner img {
+  width: 100vw;
+}
+
+.containerhomePage {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  align-items: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  flex-wrap: wrap;
+}
+
+.animatedImg {
+  width: 25vw;
+}
+
+.webSiteBio {
+  width: 30em;
+  border: #040f16 solid 2px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.experienceMainBody {
+  display: flex;
+  align-items: center;
+}
+.experienceMainBody .list-group {
+  margin-bottom: 1em;
+}
+
+aside img {
+  height: 80vh;
+  width: auto;
+  border-radius: 1rem;
+}
+
+/* Media query for mobile screens (up to 768px wide) */
+@media (max-width: 1100px) {
+  aside img {
+    display: none; /* Hide images on small screens */
+  }
+}
+.AboutUs {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsTileContainer {
+  width: 60vw;
+  border: #040f16 1px solid;
+  border-radius: 16px;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutUsBio {
+  width: 40vw;
+}
+
+.aboutUsImg {
+  width: 10vw;
+  border-radius: 16px;
+  margin-left: 1em;
+  border: #040f16 solid 1px;
+  min-width: 200px;
+}
+
+.aboutUsMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.table {
+  width: 40vw;
+  border: #040f16 solid 1px;
+}
+
+.contactForm {
+  width: 30vw;
+  border: #040f16 solid 1px;
+  border-radius: 1rem;
+  padding: 2em;
+}
+
+.contactUsMain {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5vh;
+}
+.contactUsMain a {
+  color: #040f16;
+  text-decoration: underline;
+}
+
+.hobbieContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  min-width: 250px;
+  padding: 2em;
+  align-items: center;
+  border: #040f16 solid 1px;
+  border-radius: 1rem;
+}
+
+.hobbiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.hobbieContainer img {
+  width: 100%;
+  height: 150px;
+  border: #040f16 solid 1px;
+}
+
+.animatedImg img {
+  width: 150px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.animatedImg img:hover {
+  animation: bounce 2s infinite;
+}
+
+.animatedImg img {
+  width: 150px;
+  animation: bounce 2s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* Modal Container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+/* Close Button */
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #333; /* Default color */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+  color: #007bff; /* Change text color on hover */
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  background-color: #ffffff;
+}
+
+.active {
+  /* Match hover color for consistency */
+  font-weight: bold; /* Make the active link bold */
+  border-bottom: 5px solid black; /* Highlight the active link */
+}
+
+.errorMessage {
+  color: rgb(235, 41, 41);
+}
+
+/*# sourceMappingURL=style.css.map */

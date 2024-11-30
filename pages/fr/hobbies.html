@@ -1,14 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio d'Équipe</title>
     <meta
       name="description"
-      content="Personal portfolio website for Ryan, Gabriela and Ehsan"
+      content="Site personnel de portfolio pour Ryan, Gabriela, et Ehsan"
     />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="author" content="co-authored by Ryan, Gabriela and Ehsan" />
+    <meta name="author" content="Co-rédigé par Ryan, Gabriela, et Ehsan" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/style.css" />
   </head>
+  <body>
+    <!-- Section d'en-tête -->
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="../../images/logo.png"
+            alt="Logo du portfolio de l'équipe renvoyant à la page d'accueil"
+          />
+        </a>
+        <ul>
+          <li><a href="../en/hobbies.html">EN</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a class="active" href="hobbies.html">Loisirs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">À Propos</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <img
+          src="../../images/banner_desktop.png"
+          class="img-responsive"
+          alt="Bannière présentant un design créatif pour le portfolio de l'équipe"
+        />
+      </div>
+    </header>
+
+    <!-- Contenu Principal -->
+    <h1 id="hobbiesHeading">Nos Loisirs</h1>
+    <main>
+      <!-- Conteneur pour tous les loisirs -->
+      <section class="hobbiesContainer">
+        <!-- Conteneur pour un loisir individuel -->
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/gabDog.png"
+            alt="Gabriela faisant du bénévolat avec un chien de refuge"
+          />
+          <h2>Bénévole dans un Refuge pour Chiens</h2>
+          <p>
+            Gabriela est passionnée par l'aide aux chiens qui ont été déplacés
+            et qui cherchent des foyers aimants. Grâce à son travail avec
+            Passion for Paws, elle joue un rôle essentiel dans le replacement
+            des chiens de refuge, leur offrant une seconde chance.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/gabHiking.png"
+            alt="Gabriela pratiquant la pleine conscience pendant une randonnée"
+          />
+          <h2>Bien-Être</h2>
+          <p>
+            Gabriela valorise le bien-être à travers le mouvement, la
+            spiritualité et la nature. Que ce soit en pratiquant le yoga chaud
+            ou en faisant de la randonnée, elle privilégie la méditation et
+            l'activité physique pour nourrir son corps et son esprit.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/gabCooking.png"
+            alt="Gabriela préparant un repas délicieux"
+          />
+          <h2>Cuisine</h2>
+          <p>
+            Gabriela aime expérimenter en cuisine, créant des repas aussi
+            réconfortants que délicieux. Que ce soit en testant de nouvelles
+            recettes ou en réinventant des classiques familiaux, la cuisine est
+            son moyen d'exprimer son amour et sa créativité.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/EhsanHiking.jpg"
+            alt="Ehsan explorant la nature à travers la randonnée"
+          />
+          <h2>Randonnée</h2>
+          <p>
+            Ehsan aime explorer la nature à travers la randonnée, y trouvant à
+            la fois un défi physique et une source d'inspiration.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/EhsanMovies.jpg"
+            alt="Ehsan regardant des films pour se détendre"
+          />
+          <h2>Films</h2>
+          <p>
+            Ehsan apprécie regarder des films, ce qui lui permet de se détendre
+            et de plonger dans des récits variés issus de différentes cultures.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/EhsanMusic.jpg"
+            alt="Ehsan jouant du setar, un instrument iranien traditionnel"
+          />
+          <h2>Musique</h2>
+          <p>
+            Ehsan joue du setar (un instrument traditionnel iranien), ce qui lui
+            permet de s'exprimer de manière créative tout en restant connecté à
+            ses racines culturelles.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/ryanHiking.png"
+            alt="Ryan appréciant une randonnée paisible dans la nature"
+          />
+          <h2>Randonnée</h2>
+          <p>
+            Ryan aime faire de la randonnée. Lors de ses voyages, il cherche des
+            endroits calmes et simples pour profiter de la nature et trouver la
+            paix.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/ryanPainting2.png"
+            alt="Ryan peignant comme une activité apaisante et créative"
+          />
+          <h2>Peinture</h2>
+          <p>
+            Ryan aime ralentir le temps en se concentrant sur une activité peu
+            stimulante. En s'éloignant des distractions, il s'exprime à travers
+            la peinture.
+          </p>
+        </section>
+        <section class="hobbieContainer">
+          <img
+            class="hobbiesImg"
+            src="../../images/ryanScuba.png"
+            alt="Ryan faisant de la plongée sous-marine, expérimentant la solitude et l'aventure"
+          />
+          <h2>Plongée Sous-Marine</h2>
+          <p>
+            Ryan aime faire de la plongée sous-marine. Lors de ses vacances, il
+            apprécie cette expérience, où la solitude ressemble à la randonnée.
+            La capacité de flotter donne une sensation de vol, presque comme
+            dans l'espace.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <!-- Section de pied de page -->
+    <footer>
+      <p>© 2024 Ryan, Gabriela, et Ehsan. Tous droits réservés.</p>
+    </footer>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Javascript/script.js"></script>
+  </body>
 </html>
