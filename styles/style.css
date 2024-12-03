@@ -35,7 +35,11 @@ footer {
   background-color: white;
   display: flex;
   align-items: center;
-  padding-left: 2em;
+  justify-content: center;
+  gap: 10vw;
+}
+footer p {
+  margin-bottom: 0;
 }
 
 nav {
@@ -45,7 +49,6 @@ nav {
   flex-wrap: wrap;
   margin-top: 2vh;
   border-bottom: #040f16 solid 0.5em;
-  gap: 1em;
 }
 
 nav img {

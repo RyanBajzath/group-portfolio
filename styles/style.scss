@@ -39,7 +39,11 @@ footer {
   background-color: white;
   display: flex;
   align-items: center;
-  padding-left: 2em;
+  justify-content: center;
+  gap: 10vw;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 // Navigation styles
@@ -50,7 +54,6 @@ nav {
   flex-wrap: wrap;
   margin-top: 2vh;
   border-bottom: $primary-color solid 0.5em;
-  gap: 1em;
 }
 
 nav img {

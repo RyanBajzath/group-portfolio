@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Grabbing nodes
   const modal = document.getElementById("nameModal");
   const closeModal = document.querySelector(".close");
   const nameForm = document.getElementById("nameForm");
